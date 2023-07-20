@@ -56,6 +56,7 @@
         opacity: 0.9;
         border-radius: 12px;
         max-width: 600px;
+        position: relative;
       }
       .profile-card__img {
         width: 150px;
@@ -155,12 +156,30 @@
         object-fit: contain;
         height: 300px;
       }
+      .back-btn {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        color: #0e71c8;
+        font-weight: bold;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 1;
+        outline: none;
+        background-color: transparent;
+        border: 0;
+      }
+      .back-btn:hover {
+        transform: translateY(-3px);
+        transition: all 0.3s;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="white-text">Scan Code for Payment</div>
       <div class="profile-card">
+        <button class="back-btn">⬅️</button>
         <div class="profile-card__img">
           <img src="logo.png" alt="profile card" />
         </div>
